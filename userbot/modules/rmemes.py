@@ -2720,7 +2720,7 @@ CMD_HELP.update({
 
 CMD_HELP.update({
     "memes2":
-    f"{cmd}music`\
+    f"`{cmd}music`\
 \nUsage: music player\
 \n\n`{cmd}fleave`\
 \nUsage: Keluar boong an\
