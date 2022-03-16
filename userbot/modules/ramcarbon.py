@@ -14,12 +14,11 @@
 import os
 import random
 
-from carbonnow import Carbon
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.utils import edit_delete, edit_or_reply, ram_cmd
-
+from userbot.utils.misc import Carbon
 from .ramcals import vcmention
 
 all_col = [
@@ -177,9 +176,9 @@ all_col = [
 @ram_cmd(pattern="(rc|c)arbon")
 async def crbn(event):
     from_user = vcmention(event.sender)
-    xxxx = await edit_or_reply(event, "`Sabaran Ngentodd....`")
+    xxxx = await edit_or_reply(event, "`Processing...`")
     te = event.text
-    col = random.choice(all_col) if te[1] == "r" else None
+    col = random.choice(all_col) if te[1] == "r" else "Grey"
     if event.reply_to_msg_id:
         temp = await event.get_reply_message()
         if temp.media:
@@ -196,10 +195,7 @@ async def crbn(event):
             return await edit_delete(
                 xxxx, "**Balas ke pesan atau file yang dapat dibaca**", 30
             )
-    carbon = Carbon(
-        base_url="https://carbonara.vercel.app/api/cook", code=code, background=col
-    )
-    xx = await carbon.memorize("carbon_ram")
+    xx = await Carbon(code=code, file_name="carbon_man", backgroundColor=col)
     await xxxx.delete()
     await event.reply(
         f"**Carbonised by** {from_user}",
@@ -210,12 +206,12 @@ async def crbn(event):
 @ram_cmd(pattern="ccarbon ?(.*)")
 async def crbn(event):
     from_user = vcmention(event.sender)
-    match = event.pattern_match.group(1)
+    match = event.pattern_match.group(1).strip()
     if not match:
         return await edit_or_reply(
             event, "**Berikan Warna Custom untuk Membuat Carbon**"
         )
-    msg = await edit_or_reply(event, "`Sabaran Ngentoddd...`")
+    msg = await edit_or_reply(event, "`Processing...`")
     if event.reply_to_msg_id:
         temp = await event.get_reply_message()
         if temp.media:
@@ -234,19 +230,12 @@ async def crbn(event):
             return await edit_delete(
                 msg, "**Balas pesan atau file yang dapat dibaca**", 30
             )
-    carbon = Carbon(
-        base_url="https://carbonara.vercel.app/api/cook", code=code, background=match
-    )
-    try:
-        xx = await carbon.memorize("carbon_ram")
-    except Exception as er:
-        return await msg.edit(str(er))
+    xx = await Carbon(code=code, backgroundColor=match)
     await msg.delete()
     await event.reply(
         f"**Carbonised by** {from_user}",
         file=xx,
     )
-
 
 CMD_HELP.update(
     {
