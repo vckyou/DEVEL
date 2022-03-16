@@ -1042,7 +1042,7 @@ async def _(event):
             await event.edit(animation_chars[i % 5])
 
 
-@bot.on(events.NewMessage(outgoing=True, pattern=r"(.*)"))
+@bot.on(ram_cmd(outgoing=True, pattern=r"(.*)"))
 async def _(event):
     if event.fwd_from:
         return
