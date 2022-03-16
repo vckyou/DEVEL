@@ -2718,6 +2718,7 @@ CMD_HELP.update({
 \nUsage: meh."
 })
 
+
 CMD_HELP.update({
     "memes2":
     f"`{cmd}music`\
@@ -2726,7 +2727,7 @@ CMD_HELP.update({
 \nUsage: Keluar boong an\
 \n\n`{cmd}fadmin`\
 \nUsage: Jadi Admin Fake  🤣🤣\
-\n\n`{cmdgift`\
+\n\n`{cmd}gift`\
 \nUsage: Memberi Hadiah Tapi Aku Tidak Mau Member Tau Apa Dalamnya!\
 \n\n`{cmd}police`\
 \nUsage: Waktunya Ke Penjara.\
