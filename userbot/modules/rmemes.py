@@ -5,7 +5,7 @@ from telethon import events
 
 import asyncio
 from userbot import CMD_HANDLER as cmd
-from userbot.events import register
+from userbot.events import ram_cmd
 from userbot import CMD_HELP, bot, owner
 from collections import deque
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
