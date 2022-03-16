@@ -14,7 +14,7 @@ from userbot.utils import edit_delete, edit_or_reply, ram_cmd
 from userbot.utils.misc import create_quotly
 from telethon.tl.functions.users import GetFullUserRequest
 
-from userbot.modules.ramcarbon import all_col
+from .ramcarbon import all_col
 
 
 @ram_cmd(pattern="q ?(.*)")
