@@ -4,13 +4,12 @@ FROM ramadhani892/ram-ubot:slim-buster
 #    RAM-UBOT DOCKER
 #   FROM DOCKERHUB.COM
 # ======================
+##
 
-RUN git clone -b Developer https://github.com/ramadhani892/DEVEL /root/userbot
-RUN mkdir /root/userbot/.bin
-RUN pip install --upgrade pip setuptools
-WORKDIR /root/userbot
+RUN git clone -b Developer https://github.com/ramadhani892/DEVEL /home/ram-ubot/ \
+    && chmod 777 /home/ram-ubot \
+    && mkdir /home/ram-ubot/bin/
 
-#Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/ramadhani892/RAM-UBOT/RAM-UBOT/requirements.txt
+WORKDIR /home/ram-ubot/
 
-CMD ["python3","-m","userbot"]
+CMD ["python3", "-m", "userbot"]
