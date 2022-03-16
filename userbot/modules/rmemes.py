@@ -373,7 +373,7 @@ async def _(event):
 
 @ram_cmd(pattern="gangstar(?: |$)(.*)")
 async def _(memek):
-    event = await edit_or_reply(event, "Hai Goblok")
+    event = await edit_or_reply(memek, "Hai Goblok")
     await asyncio.sleep(1)
     await event.edit("Aku")
     await asyncio.sleep(2)
@@ -388,7 +388,6 @@ async def _(memek):
     await event.edit("😎😎😎")
     await asyncio.sleep(1)
     await event.edit("Mau gak gua bunuh? Woi kontol 😎😎😎")
-
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"(.*)"))
 async def _(event):
