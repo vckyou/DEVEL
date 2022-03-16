@@ -12,7 +12,7 @@ from telethon.errors.rpcerrorlist import MessageIdInvalidError
 import random
 from userbot.utils import ram_cmd, edit_or_reply
 
-@bot.on(ram_cmd(pattern=r"(.*)"))
+@bot.on(ram_cmd(outgoing=True, pattern=r"(.*)"))
 async def _(event):
     if event.fwd_from:
         return
