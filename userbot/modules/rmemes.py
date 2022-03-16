@@ -2733,8 +2733,7 @@ CMD_HELP.update({
 \n\n`{cmd}kill`\
 \nUsage: Untuk Membunuh Musuh Secara Online:v\
 \n\n`{cmd}os`\
-\nUsage: Lihat Sendiri."
-})
+\nUsage: Lihat Sendiri."})
 
 CMD_HELP.update({
     "memes11":
@@ -2758,5 +2757,4 @@ CMD_HELP.update({
 \nUsage: Untuk Berkeliling Di Satu Tempat✈️\
 \n\n`{cmd}jio`\
 \nUsage: Jaringan Mu Lambat?? Boost Menggunakan Ini\
-\n\n\n Selamat Bersenang-Senang Kawan:v"
-})
+\n\n\n Selamat Bersenang-Senang Kawan:v"})
