@@ -4,7 +4,7 @@
 from telethon import events
 
 import asyncio
-
+from userbot import CMD_HANDLER as cmd
 from userbot.events import register
 from userbot import CMD_HELP, bot, owner
 from collections import deque
