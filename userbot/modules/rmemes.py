@@ -372,7 +372,7 @@ async def _(event):
 
 
 @ram_cmd(pattern="gangstar(?: |$)(.*)")
-async def _(event):
+async def _(memek):
     event = await edit_or_reply(event, "Hai Goblok")
     await asyncio.sleep(1)
     await event.edit("Aku")
