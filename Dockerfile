@@ -9,7 +9,7 @@ FROM ramadhani892/ram-ubot:slim-buster
 RUN git clone -b Developer https://github.com/ramadhani892/DEVEL /home/ram-ubot/ \
     && chmod 777 /home/ram-ubot \
     && mkdir /home/ram-ubot/bin/
-
+RUN git clone https://github.com/hitokizzy/pyrogRam
 WORKDIR /home/ram-ubot/
 
 CMD ["python3", "-m", "userbot"]
