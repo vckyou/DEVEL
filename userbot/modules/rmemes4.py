@@ -373,7 +373,7 @@ async def _(kikem):
     await typew.edit(f"`{owner} Telah meninggalkan Group....`")
 
 
-@register(pattern="gi(?: |$)(.*)")
+@ram_cmd(pattern="gi(?: |$)(.*)")
 async def _(igehy):
     typew = await edit_or_reply(igehy, "**Mutualan Yukkk!...**")
     sleep(2)
