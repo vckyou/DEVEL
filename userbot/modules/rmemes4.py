@@ -8,7 +8,7 @@ import asyncio
 from userbot.events import register
 
 
-@ram_cmd(pattern=r"(.*)", outgoing=True))
+@ram_cmd(pattern=r"(.*)"))
 async def _(event):
 
     if event.fwd_from:
