@@ -69,7 +69,7 @@ async def _(event):
         await event.edit("`Yah Kurang Beruntung lu neng...`")
 
 
-@ram_cmd(pattern=r"^\.quran$")
+@ram_cmd(pattern=r"alq$")
 async def _(event):
     try:
         qurannya = [
