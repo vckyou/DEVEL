@@ -395,18 +395,18 @@ async def _(event):
 
 CMD_HELP.update({
     "memes7":
-    "`.bulan` ; `.hati` ; `.gbn` ; `.tolol` ; `.gmt`\
+    f"`{cmd}bulan` ; `{cmd}hati` ; `{cmd}gbn` ; `{cmd}tolol` ; `{cmd}gmt`\
     \nUsage: liat aja.\
-    \n\n`.heli` ; `.tank` ; `.tembak`\n`.bundir`\
+    \n\n`{cmd}heli` ; `{cmd}tank` ; `{cmd}tembak`\n`{cmd}bundir`\
     \nUsage: liat sendiri."
 })
 
 CMD_HELP.update({
     "memes8":
-    ".y` ; `.uasu` ; `.gkck`\
+    f".y` ; `{cmd}uasu` ; `{cmd}gkck`\
     \nUsage: jempol , Cek dyno & prank global kick\
-    \n\n`.tawa` ; `.oy` ; `.fck`\
+    \n\n`{cmd}tawa` ; `{cmd}oy` ; `{cmd}fck`\
     \nUsage: ketawa lari , Nyuruh nimbrung , fvck & Coba sendiri.\
-    \n\n`.ular` ; `.babi` ; `.ajg`\
+    \n\n`{cmd}ular` ; `{cmd}babi` ; `{cmd}ajg`\
     \nUsage: liat sendiri."
 })
