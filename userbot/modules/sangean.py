@@ -8,7 +8,7 @@ from userbot.utils import ram_cmd
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
-from telethon.tl.types import InputMessagesFilterAudio
+from telethon.tl.types import InputMessagesFilterAudios
 
 
 @ram_cmd(pattern=r"ayg$")
