@@ -8,7 +8,7 @@ from userbot.utils import ram_cmd
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
-from telethon.tl.types import InputMessagesFilterAudios
+from telethon.tl.types import InputMessagesFilterMedia
 
 
 @ram_cmd(pattern=r"ayg$")
@@ -76,7 +76,7 @@ async def _(event):
         qurannya = [
             quran
             async for quran in event.client.iter_messages(
-                "@kureenkeryam", filter=InputMessagesFilterAudio
+                "@kureenkeryam", filter=InputMessagesFilterMedia
             )
         ]
         aing = await event.client.get_me()
