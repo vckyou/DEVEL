@@ -104,7 +104,7 @@ async def _(typew):
                      "＜ 、･　　|　　＼ \n"
                      "　＼＿＿／∪ _ ∪) \n"
                      "　　　　　 Ｕ Ｕ\n", reply_to=typew.reply_to_msg_id)
-
+    await typew.delete()
 
 @ram_cmd(pattern="tawa(?: |$)(.*)")
 async def _(typew):
@@ -113,7 +113,7 @@ async def _(typew):
                      "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
                      "▄▀──█▄▄──────█─█▄▄\n"
                      "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
-                     "─▀───────▀▀─▀───────▀▀\n**Awkwokwokwok Anak Ngentot..**", reply_to=reply_to_msg_id)
+                     "─▀───────▀▀─▀───────▀▀\n**Awkwokwokwok Anak Ngentot..**", reply_to=typew.reply_to_msg_id)
     await typew.delete()
 
 @ram_cmd(pattern="ular(?: |$)(.*)")
