@@ -413,6 +413,6 @@ CMD_HELP.update({
 
 CMD_HELP.update({
     "qur'an":
-    f"{cmd}quran\
+    f"{cmd}alq\
     \nUsage: Memberikan Voice Al-Qur'an yang menyejukan hati."
 })
