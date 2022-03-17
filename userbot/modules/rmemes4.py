@@ -225,7 +225,7 @@ async def _(typew):
                      "█████‡‡‡‡‡‡‡██████████\n", reply_to=typew.reply_to_msg_id)
     await typew.delete()
 
-@register(outgoing=True, pattern="tank(?: |$)(.*)")
+@ram_cmd(pattern="tank(?: |$)(.*)")
 async def _(typew):
     await typew.client.send_message(
         typew.chat_id, "█۞███████]▄▄▄▄▄▄▄▄▄▄▃ \n"
