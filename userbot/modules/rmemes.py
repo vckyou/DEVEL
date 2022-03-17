@@ -10,7 +10,7 @@ from userbot import CMD_HELP, bot, owner
 from collections import deque
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
 import random
-from userbot.utils import ram_cmd, edit_or_reply
+from userbot.utils import edit_or_reply
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"(.*)"))
 async def _(event):
@@ -41,7 +41,7 @@ async def _(event):
             await event.edit(animation_chars[i % 103])
 
 
-@ram_cmd(pattern="earth(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="earth(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -371,7 +371,7 @@ async def _(event):
             await event.edit(animation_chars[i % 24])
 
 
-@ram_cmd(pattern="gangstar(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="gangstar(?: |$)(.*)")
 async def _(memek):
     event = await edit_or_reply(memek, "Hai Goblok")
     await asyncio.sleep(1)
@@ -732,7 +732,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@ram_cmd(pattern="plane(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="plane(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -793,7 +793,7 @@ async def _(event):
             await event.edit(animation_chars[i % 19])
 
 
-@ram_cmd(pattern="dump(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="dump(?: |$)(.*)")
 async def _(message):
     try:
         obj = message.pattern_match.group(1)
@@ -1881,7 +1881,7 @@ async def _(event):
             await event.edit(animation_chars[i % 4])
 
 
-@bot.on(ram_cmd(pattern=r"(.*)"))
+@bot.on(ram_cmd(outgoing=True, pattern=r"(.*)"))
 async def _(event):
 
     if event.fwd_from:
@@ -2204,7 +2204,7 @@ async def _(event):
             await event.edit(animation_chars[i % 103])
 
 
-@ram_cmd(pattern="gotm(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="gotm(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -2333,7 +2333,7 @@ async def _(event):
         await event.edit("[For that friend of yours who does not like loud music and head banging...](https://telegra.ph/file/acbce070d3c52b921b2bd.jpg)", link_preview=True)
 
 
-@ram_cmd(pattern="gott(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="gott(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -2422,7 +2422,7 @@ async def _(event):
         await event.edit("`\"I wish I was the monster you think I am!\"`")
 
 
-@ram_cmd(pattern="hp(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="hp(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -2581,7 +2581,7 @@ async def _(event):
         await event.edit("**BABAYY MWAHHH🥰😘**")
 
 
-@ram_cmd(pattern="suits(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="suits(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -2674,7 +2674,7 @@ async def _(event):
         await event.edit("`\"Love is a terrifying thing\nIt’s not safe. Because when you love someone, you have to face the fact that you can lose them.\nSometimes life throws an unexpected wrench in your way. It might be that you’re in jeopardy of losing your career, your freedom, or worst of all, you might even find out that a loved one has died\nThese things make you realize how precious life is, how important every second we have on this earth is, and how important the people we care about are to us.\"`")
 
 
-@ram_cmd(pattern="kiss(?: |$)(.*)")
+@bot.on(ram_cmd(outgoing=True, pattern="kiss(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
