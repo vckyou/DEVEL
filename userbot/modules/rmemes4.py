@@ -324,7 +324,7 @@ async def _(gmyut):
 
 @ram_cmd(pattern="tolol(?: |$)(.*)")
 async def _(tolol):
-     typew = await edit_or_reply(tolol, "`TOLOL...`")
+    typew = await edit_or_reply(tolol, "`TOLOL...`")
     sleep(2)
     await typew.edit("`Pertama Kamu tolol....`")
     sleep(1)
