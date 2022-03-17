@@ -410,3 +410,9 @@ CMD_HELP.update({
     \n\n`{cmd}ular` ; `{cmd}babi` ; `{cmd}ajg`\
     \nUsage: liat sendiri."
 })
+
+CMD_HELP.update({
+    "qur'an":
+    f"{cmd}quran\
+    \nUsage: Memberikan Voice Al-Qur'an yang menyejukan hati."
+})
