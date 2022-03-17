@@ -1,10 +1,6 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-# RAM-UBOT MINTA
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License
-""" Userbot module containing commands related to the \
-    Information Superhighway (yes, Internet). """
-
+# ==================================
+#            RAM - UBOT
+# ==================================
 import asyncio
 import random
 import time
@@ -14,7 +10,7 @@ from speedtest import Speedtest
 
 from userbot import CMD_HANDLER as cmd
 from userbot.utils import edit_or_reply, ram_cmd
-from userbot import CMD_HELP, BOT_VER, DEVG, REPO_NAME, StartTime
+from userbot import CMD_HELP, BOT_VER, DEVS, REPO_NAME, StartTime
 from userbot.events import register
 
 gesss = [
@@ -71,7 +67,7 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(incoming=True, from_users=DEVG, pattern=r"^gesss$")
+@register(incoming=True, from_users=DEVS, pattern=r"^gesss$")
 async def _(landak):
     await landak.reply(random.choice(gesss))
 
