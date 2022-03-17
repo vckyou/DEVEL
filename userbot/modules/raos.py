@@ -15,4 +15,4 @@ async def _(e):
 
 CMD_HELP.update({
     "roas2":
-    f"ketik\n\n{cmd}a\nUntuk meroasting"}
+    f"ketik\n\n{cmd}a\nUntuk meroasting"})
