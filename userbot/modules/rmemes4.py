@@ -66,30 +66,30 @@ async def _(event):
 @bot.on(ram_cmd(outgoing=True, pattern=r"heli(?: |$)(.*)")
 async def _(typew):
     await typew.client.send_message(
-        typew.chat_id, "▬▬▬.◙.▬▬▬ \n"
-                     "═▂▄▄▓▄▄▂ \n"
-                     "◢◤ █▀▀████▄▄▄▄◢◤ \n"
-                     "█▄ █ █▄ ███▀▀▀▀▀▀▀╬ \n"
-                     "◥█████◤ \n"
-                     "══╩══╩══ \n"
-                     "╬═╬ \n"
-                     "╬═╬ \n"
-                     "╬═╬ \n"
-                     "╬═╬ \n"
-                     "╬═╬ \n"
-                     "╬═╬ \n"
-                     "╬═╬ HALO ANAK YATIM,AKU DATANG :) \n"
-                     "╬═╬☻/ \n"
-                     "╬═╬/▌ \n"
+        typew.chat_id, "▬▬▬.◙.▬▬▬ \n",
+                     "═▂▄▄▓▄▄▂ \n",
+                     "◢◤ █▀▀████▄▄▄▄◢◤ \n",
+                     "█▄ █ █▄ ███▀▀▀▀▀▀▀╬ \n",
+                     "◥█████◤ \n",
+                     "══╩══╩══ \n",
+                     "╬═╬ \n",
+                     "╬═╬ \n",
+                     "╬═╬ \n",
+                     "╬═╬ \n",
+                     "╬═╬ \n",
+                     "╬═╬ \n",
+                     "╬═╬ HALO ANAK YATIM,AKU DATANG :) \n",
+                     "╬═╬☻/ \n",
+                     "╬═╬/▌ \n",
                      "╬═╬/ \\ \n", reply_to=typew.reply_to_msg_id)
      await typew.delete()
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"tembak(?: |$)(.*)")
 async def _(typew):
     await typew.client.send_message(
-        typew.chat_id, "_/﹋\\_\n"
+        typew.chat_id, "_/﹋\\_\n",
                      "(҂`_´)\n"
-                     "<,︻╦╤─ ҉\n"
+                     "<,︻╦╤─ ҉\n",
                      r"_/﹋\_"
                      "\n**Mau Jadi Pacarku Gak?!**", reply_to=typew.reply_to_msg_id)
     await typew.delete()
@@ -98,28 +98,28 @@ async def _(typew):
 async def _(typew):
     await typew.client.send_message(
         typew.chat_id, "`DIDUGA BUNDIR KARNA GAGAL NGENTOD...`          \n　　　　　|"
-                     "\n　　　　　| \n"
-                     "　　　　　| \n"
-                     "　　　　　| \n"
-                     "　　　　　| \n"
-                     "　　　　　| \n"
-                     "　　　　　| \n"
-                     "　　　　　| \n"
-                     "　／￣￣＼| \n"
-                     "＜ ´･ 　　 |＼ \n"
-                     "　|　３　 | 丶＼ \n"
-                     "＜ 、･　　|　　＼ \n"
-                     "　＼＿＿／∪ _ ∪) \n"
+                     "\n　　　　　| \n",
+                     "　　　　　| \n",
+                     "　　　　　| \n",
+                     "　　　　　| \n",
+                     "　　　　　| \n",
+                     "　　　　　| \n",
+                     "　　　　　| \n",
+                     "　／￣￣＼| \n",
+                     "＜ ´･ 　　 |＼ \n",
+                     "　|　３　 | 丶＼ \n",
+                     "＜ 、･　　|　　＼ \n",
+                     "　＼＿＿／∪ _ ∪) \n",
                      "　　　　　 Ｕ Ｕ\n", reply_to=typew.reply_to_msg_id)
     await typew.delete()
 
 @bot.on(ram_cmd(outgoing=True, pattern='^.tawa(?: |$)(.*)')
 async def _(typew):
     await typew.client.send_message(
-        typew.chat_id, "────██──────▀▀▀██\n"
-                     "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
-                     "▄▀──█▄▄──────█─█▄▄\n"
-                     "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
+        typew.chat_id, "────██──────▀▀▀██\n",
+                     "──▄▀█▄▄▄─────▄▀█▄▄▄\n",
+                     "▄▀──█▄▄──────█─█▄▄\n",
+                     "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n",
                      "─▀───────▀▀─▀───────▀▀\n`Awkwokwokwok Anak Ngentot..`", reply_to=typew.reply_to_msg_id)
 
     await typew.delete()
