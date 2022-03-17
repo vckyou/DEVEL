@@ -776,7 +776,7 @@ async def _(event):
         await event.edit(input_str)
         animation_chars = [
             "**Promoting User As Admin...**",
-            "**Enabling All Permissions To User...**",
+            "**Enabling All Permissio To User...**",
             "**(1) Send Messages: ☑️**",
             "**(1) Send Messages: ✅**",
             "**(2) Send Media: ☑️**",
@@ -953,7 +953,7 @@ async def _(event):
             await event.edit(animation_chars[i % 72])
 
 
-@ram_cmd((pattern=r"(.*)")
+@ram_cmd(pattern=r"(.*)")
 async def _(event):
     if event.fwd_from:
         return
