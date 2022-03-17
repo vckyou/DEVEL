@@ -368,14 +368,14 @@ async def _(uasuh):
 
 @ram_cmd(pattern="kickme(?: |$)(.*)")
 async def _(kikem):
-     typew = await edit_or_reply(kikem, f"`{owner}, Saat Nya Pergi...`")
+    typew = await edit_or_reply(kikem, f"`{owner}, Saat Nya Pergi...`")
     sleep(3)
     await typew.edit(f"`{owner} Telah meninggalkan Group....`")
 
 
 @register(pattern="gi(?: |$)(.*)")
 async def _(igehy):
-     typew = await edit_or_reply(igehy, "**Mutualan Yukkk!...**")
+    typew = await edit_or_reply(igehy, "**Mutualan Yukkk!...**")
     sleep(2)
     await typew.edit(f"𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌= [𝐓𝐄𝐊𝐀𝐍]({IG_ALIVE})")
 
