@@ -40,7 +40,7 @@ async def gen_thumb(thumbnail, title, userid, ctitle):
     font2 = ImageFont.truetype("userbot/utils/styles/Roboto-Medium.ttf", 76)
     draw.text((27, 538), f"Playing on {ctitle[:15]}...", (0, 0, 0), font=font)
     draw.text((27, 612), f"{title[:20]}...", (0, 0, 0), font=font2)
-    img.save(f"userbot/resources/utilsfinal{userid}.png")
+    img.save(f"userbot/utils/resource/final{userid}.png")
     os.remove(f"userbot/utils/resource/temp{userid}.png")
     os.remove(f"userbot/utils/resource/thumb{userid}.png")
     final = f"userbot/utils/resource/final{userid}.png"
