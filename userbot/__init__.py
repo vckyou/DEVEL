@@ -432,6 +432,11 @@ if BOT_TOKEN is not None:
 else:
     tgbot = None
 
+call_py = PyTgCalls(bot)
+except Exception as e:
+    print(f"STRING_SESSION - {e}")
+    sys.exit()
+
 # Global Variables
 COUNT_MSG = 0
 USERS = {}
