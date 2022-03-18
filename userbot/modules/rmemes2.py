@@ -878,7 +878,7 @@ weebyfont = [
 # ===========================================
 
 
-@register(outgoing=True, pattern=r"^\.(\w+)say (.*)")
+@bot.on(ram_cmd(outgoing=True, pattern=r"(\w+)say (.*)")
 async def univsaye(cowmsg):
     """ For .cowsay module, userbot wrapper for cow which says things. """
     arg = cowmsg.pattern_match.group(1).lower()
@@ -894,7 +894,7 @@ async def univsaye(cowmsg):
     await cowmsg.edit(f"`{cheese.milk(text).replace('`', '´')}`")
 
 
-@bot.om(ram_cmd(outgoing=True, pattern=r"coinflip (.*)")
+@bot.on(ram_cmd(outgoing=True, pattern=r"coinflip (.*)")
 async def coin(event):
     r = choice(["Kepala", "Ekor"])
     input_str = event.pattern_match.group(1)
