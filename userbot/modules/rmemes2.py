@@ -1268,7 +1268,7 @@ async def moon(event):
         return
 
 
-@bot.on(rwm_cmd(outgoing=True, pattern=r"waktu$"))
+@bot.on(ram_cmd(outgoing=True, pattern=r"waktu$"))
 async def moon(event):
     deq = deque(list("🎑🌄🌅🌇🌆🌃🌌"))
     try:
