@@ -137,7 +137,7 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 # default no leave
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001692751821]
+    BLACKLIST_CHAT = [-1001692751821, -1001459812644]
 
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
