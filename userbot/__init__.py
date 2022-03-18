@@ -22,6 +22,7 @@ from datetime import datetime
 from redis import StrictRedis
 from markdown import markdown
 from dotenv import load_dotenv
+from pytgcalls import PyTgCalls
 from requests import get
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sync import TelegramClient, custom, events
