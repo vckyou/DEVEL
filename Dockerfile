@@ -12,4 +12,4 @@ RUN git clone -b Developer https://github.com/ramadhani892/DEVEL /home/Developer
 WORKDIR /home/Developer/
 
 
-CMD ["python3", "-m", "userbot"]
+CMD ["bash", "start"]
