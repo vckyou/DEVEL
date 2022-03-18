@@ -1340,7 +1340,7 @@ async def earth(event):
         return
 
 
-@bot.on(ram_cmd(outgoing=True, pattern=hati$"))
+@bot.on(ram_cmd(outgoing=True, pattern="hati$"))
 async def earth(event):
     deq = deque(list("🖤💜💙💚💛🧡❤️🤍"))
     try:
