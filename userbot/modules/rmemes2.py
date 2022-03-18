@@ -1469,7 +1469,7 @@ async def let_me_google_that_for_you(lmgtfy_q):
                         f"\n[{query}]({r.json()['shorturl']})")
 
 
-@bot.on(ram_cmd(outgoing=True, pattern=r"sayhi$")
+@bot.on(ram_cmd(outgoing=True, pattern=r"sayhi$"))
 async def sayhi(e):
     await e.edit(
         "\n✨✨✨✨✨✨✨✨✨✨✨✨"
