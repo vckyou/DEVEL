@@ -164,7 +164,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"f"╭✠╼━━━━━━❖━━━━━━━✠\n┣• **TUAN:** `{owner}`\n┣• **PIBOONG:** [{user.first_name](tg://user?id={user.id})\n┣• **Aksi:** `Unglobal banned`\n╰✠╼━━━━━━❖━━━━━━━✠")
+        f"╭✠╼━━━━━━❖━━━━━━━✠\n┣• **TUAN:** `{owner}`\n┣• **PIBOONG:** [{user.first_name](tg://user?id={user.id})\n┣• **Aksi:** `Unglobal banned`\n╰✠╼━━━━━━❖━━━━━━━✠")
 
 CMD_HELP.update(
     {
