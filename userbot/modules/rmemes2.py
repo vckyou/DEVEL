@@ -878,8 +878,8 @@ weebyfont = [
 # ===========================================
 
 
-@bot.on(ram_cmd(outgoing=True, pattern=r"(\w+)say (.*)")
-async def univsaye(cowmsg):
+@bot.on(ram_cmd(outgoing=True, pattern=r"(\w+)say (.*)"))
+async def _(cowmsg):
     """ For .cowsay module, userbot wrapper for cow which says things. """
     arg = cowmsg.pattern_match.group(1).lower()
     text = cowmsg.pattern_match.group(2)
@@ -894,8 +894,8 @@ async def univsaye(cowmsg):
     await cowmsg.edit(f"`{cheese.milk(text).replace('`', '´')}`")
 
 
-@bot.on(ram_cmd(outgoing=True, pattern=r"coinflip (.*)")
-async def coin(event):
+@bot.on(ram_cmd(outgoing=True, pattern=r"coinflip (.*)"))
+async def _(event):
     r = choice(["Kepala", "Ekor"])
     input_str = event.pattern_match.group(1)
     if input_str:
@@ -922,8 +922,8 @@ async def coin(event):
             await event.edit("Koin Itu Mendarat Di: **Ekor**.")
 
 
-@bot.on(ram_cmd(pattern=r"slap(?: |$)(.*)", outgoing=True)
-async def who(event):
+@bot.on(ram_cmd(pattern=r"slap(?: |$)(.*)", outgoing=True))
+async def _(event):
     """ slaps a user, or get slapped if not a reply. """
     replied_user = await get_user_from_event(event)
     if replied_user:
@@ -983,8 +983,8 @@ async def slap(replied_user, event):
     return caption
 
 
-@bot.on(ram_cmd(outgoing=True, pattern=r"boobs(?: |$)(.*)")
-async def boobs(e):
+@bot.on(ram_cmd(outgoing=True, pattern=r"boobs(?: |$)(.*)"))
+async def _(e):
     await e.edit("`Berdosa, Mendapatkan Gambar Boobs...`")
     await sleep(3)
     await e.edit("`Mengirim Gambar Boobs...`")
@@ -999,7 +999,7 @@ async def boobs(e):
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"pantat(?: |$)(.*)")
-async def butts(e):
+async def _(e):
     await e.edit("`Berdosa, Mendapatkan Gambar Pantat Yang Indah...`")
     await sleep(3)
     await e.edit("`Mengirim Gambar Pantat Indah...`")
@@ -1014,7 +1014,7 @@ async def butts(e):
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"(yes|no|maybe|decide)$")
-async def decide(event):
+async def _(event):
     decision = event.pattern_match.group(1).lower()
     message_id = event.reply_to_msg_id if event.reply_to_msg_id else None
     if decision != "decide":
@@ -1029,25 +1029,25 @@ async def decide(event):
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"fp$")
-async def facepalm(e):
+async def _(e):
     """ Facepalm  🤦‍♂ """
     await e.edit("🤦‍♂")
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"cry$")
-async def cry(e):
+async def _(e):
     """ y u du dis, i cry everytime !! """
     await e.edit(choice(CRI))
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"insult$")
-async def insult(e):
+async def _(e):
     """ I make you cry !! """
     await e.edit(choice(INSULT_STRINGS))
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"cp(?: |$)(.*)")
-async def copypasta(cp_e):
+async def _(cp_e):
     """ Copypasta the famous meme """
     textx = await cp_e.get_reply_message()
     message = cp_e.pattern_match.group(1)
@@ -1080,7 +1080,7 @@ async def copypasta(cp_e):
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"vapor(?: |$)(.*)")
-async def vapor(vpr):
+async def _(vpr):
     """ Vaporize everything! """
     reply_text = list()
     textx = await vpr.get_reply_message()
@@ -1104,7 +1104,7 @@ async def vapor(vpr):
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"str(?: |$)(.*)")
-async def stretch(stret):
+async def _(stret):
     """ Stretch it."""
     textx = await stret.get_reply_message()
     message = stret.text
