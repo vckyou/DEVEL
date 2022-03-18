@@ -1,4 +1,4 @@
-FROM vckyouubitch/geez:master
+FROM ramadhani892/ramgans:slim-buster
 
 # Rama ganteng, Yang hapus credit, Lo babi heheh
 # ======================
