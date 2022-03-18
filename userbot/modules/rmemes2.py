@@ -1442,7 +1442,7 @@ async def bluetext(bt_e):
             "/SEDANG /GABUT /KARNA /TERTARIK /MELIHAT /TEKS /BIRU /PASTI /ANDA /BOSAN? /AYANGG /NGENTOT /MEMEK /LONTE /KONTOL /TIDUR /BERAK")
 
 
-@bot.on(ram_cmd(outgoing=True, pattern=r"f (.*)")
+@bot.on(ram_cmd(outgoing=True, pattern=r"f (.*)"))
 async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
