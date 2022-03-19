@@ -28,7 +28,7 @@ async def gen_thumb(thumbnail, title, userid, ctitle):
                 await f.close()
     theme = random.choice(themes)
     image1 = Image.open(f"userbot/utils/resource/thumb{userid}.png")
-    image2 = Image.open(f"userbot/utils/resource/{theme}.png")
+    image2 = Image.open(f"userbot/utils/resource/thumb{theme}.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
