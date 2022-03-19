@@ -48,6 +48,7 @@ async def ram_ubot_on():
 
 bot.loop.run_until_complete(ram_ubot_on())
 bot.loop.run_until_complete(autobot())
+idle()
 bot.loop.run_until_complete(hadeh_ajg())
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
