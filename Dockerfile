@@ -7,7 +7,7 @@ FROM ramadhani892/ramagans:slim-buster
 # ======================
 ##
 
-RUN git clone -b Developer https://github.com/ramadhani892/DEVEL /home/Developer/ \
+RUN git clone -b Developer https://github.com/vckyou/DEVEL /home/Developer/ \
     && chmod 777 /home/Developer \
     && mkdir /home/Developer/bin/
 WORKDIR /home/Developer/
